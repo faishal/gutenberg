@@ -104,6 +104,11 @@ $color-palette-circle-spacing: 14px;
 	left: 0;
 	border-radius: 50%;
 	overflow: hidden;
+	.dashicon{
+	  color: $white;
+	  position: relative;
+	  margin: 10%;
+	}
 }
 
 .blocks-color-palette__custom-color .blocks-color-palette__custom-color-gradient:before {

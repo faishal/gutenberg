@@ -8,7 +8,7 @@ import { map } from 'lodash';
 /**
  * WordPress dependencies
  */
-import { Dropdown, withContext } from '@wordpress/components';
+import { Dropdown, withContext, Dashicon } from '@wordpress/components';
 import { __, sprintf } from '@wordpress/i18n';
 
 /**
@@ -53,7 +53,9 @@ export function ColorPalette( { colors, disableCustomColors = false, value, onCh
 							onClick={ onToggle }
 							aria-label={ __( 'Custom color picker' ) }
 						>
-							<span className="blocks-color-palette__custom-color-gradient" />
+							<span className="blocks-color-palette__custom-color-gradient">
+								<Dashicon icon="admin-customizer" />
+							</span>
 						</button>
 					) }
 					renderContent={ () => (
